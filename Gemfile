@@ -35,8 +35,13 @@ gem 'mechanize'
 
 gem 'nokogiri'
 
-
 gem 'lazy_high_charts'
+
+# 搜索
+gem "ransack", github: "activerecord-hackery/ransack", branch: "rails-4.1"
+
+# 表单
+gem 'simple_form'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

@@ -8,7 +8,8 @@ class PokersController < ApplicationController
     time_arr = []
     tong_arr = []
     shun_arr = []
-    time = Time.parse("2014-11-1")
+    search_time = params[:poker_time].present? ? params[:poker_time] : Time.current.strftime("%F")
+    time = Time.parse(search_time)
     begin_mon = time.beginning_of_month
     end_mon = time.end_of_month
 

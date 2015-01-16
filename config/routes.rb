@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :pokers do
     collection do
       get 'show_poker'
+      post 'show_poker'
     end
   end
 
